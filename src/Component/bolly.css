@@ -26,6 +26,8 @@ a {
   font-size: 34px;
   position: relative;
   top:-63px;
+  text-decoration: underline;
+  text-decoration-color: red;
 
 }
 .Hr {
@@ -54,6 +56,8 @@ a {
   position: relative;
   top: 14px;
   left: 30px;
+  text-decoration: underline;
+  text-decoration-color: red;
 }
 .news_card123 {
   margin-top: -11%;

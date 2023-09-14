@@ -20,7 +20,7 @@ const Home = () => {
             <div className="homeContainer">
                 <div className="photos">
                     <div className="largeImge">
-                        <img src="https://www.financialexpress.com/wp-content/uploads/2023/08/G20-5.jpg" alt="not found"></img>
+                        <img src="https://m.economictimes.com/thumb/msid-103549289,width-1200,height-630,resizemode-4,imgsize-47850/g20-summit-india-ready-to-lead-the-new-digital-age.jpg" alt="not found"></img>
                         <div className="img-text">G20 New Delhi Leaders’ Declaration: Sense of the consensus</div>
                     </div>
                     <div className="sideimgContainer">
@@ -36,7 +36,7 @@ const Home = () => {
                 </div>
             </div>
             <h2 className="thelatest">The Latest</h2>
-            <hr className="thehr" />
+          
             <div className="home_latest">
                 <div className="home_latest2">
                     {

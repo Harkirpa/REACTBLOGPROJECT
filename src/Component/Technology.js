@@ -3,7 +3,6 @@ import storeData from "../app/Store";
 import { Link } from "react-router-dom";
 import Navbar from "./Navbar";
 import Footer from "./Footer";
-
 import "./bolly.css";
 const Technology = () => {
   const [TData] = useContext(storeData);
@@ -202,12 +201,19 @@ const Technology = () => {
                       </div>
                     </div>
                   </Link>
-                }
-              </>
-            );
-          })}
-        </div>
+              }{" "}
+              <div className="ads">
+                <iframe
+                  src="https://giphy.com/embed/7VzgMsB6FLCilwS30v"
+                  style={{ width: "328px", height: "100%", border: "none" }}
+                  title="ad"
+                ></iframe>
+              </div>
+            </>
+          );
+        })}
       </div>
+    </div>
       <Footer />
     </>
   );

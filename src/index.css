@@ -78,6 +78,8 @@ code {
     top: -181px;
     left: 9px;
     width: 48vw;
+    text-decoration: underline;
+    text-decoration-color: red;
   }
   .thehr {
     border: 3px solid red;
@@ -248,7 +250,7 @@ code {
   .top2nd-smal{
     width: 100%;
     height: 55%;
-   
+    margin-top: 9%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -291,6 +293,7 @@ code {
   .latest_story_header{
     margin-left: 10%;
     text-decoration: underline;
+    text-decoration-color: red;
     margin-top: 20px;
   }
   .latest_story_parent .latest_story_child{
@@ -374,9 +377,9 @@ code {
   font-size:5vw;
 }
 .home_latest {
-  width: 90%;
-  /* border: solid 1px black; */
-  height: 1000px;
+  width: 200%;
+ 
+  height: 646px;
   flex-direction: column;
 }
 .home_latest1 {
@@ -479,6 +482,7 @@ code {
 }
 .home_head1{
   text-decoration: underline;
+  text-decoration-color: red;
   font-size: 30px;
   margin-top: -175px;
   margin-bottom: 20px;
@@ -502,6 +506,7 @@ code {
 }
 .home_head1 {
   text-decoration: underline;
+  text-decoration-color: red;
   font-size: 32px;
   margin-top: -50px;
   margin-bottom: 20px;

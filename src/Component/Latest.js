@@ -464,12 +464,12 @@ const Latest = () => {
     {
       id: 43,
       heading:
-        "'Secret Invasion' Director Ali Selim on G'iah's Power-Up and How the Series Impacts Tony Stark's Death",
+        "Parineeti Chopra and Raghav Chadha Wedding: Invite of various functions goes vira",
       image:
-        "https://www.hollywoodreporter.com/wp-content/uploads/2023/07/Secret-Invasion-Still-Ali-Selim-Inset-Getty-H-2023.jpg?w=1296&h=730&crop=1&resize=681%2C383",
+        "https://stat5.bollywoodhungama.in/wp-content/uploads/2023/09/Parineeti-Chopra-and-Raghav-Chadha-Wedding-Invite-620.jpg",
       description:
-        "In the finale of Secret Invasion, Emilia Clarke's G'iah inherited a litany of MCU character superpowers, as Gravik's (Kingsley Ben-Adir) plan to become a God-like Skrull backfired, resulting in his death.",
-         largdesc:"In the finale of Secret Invasion, Emilia Clarke's G'iah inherited a litany of MCU character superpowers, as Gravik's (Kingsley Ben-Adir) plan to become a God-like Skrull backfired, resulting in his death.With G'iah now being seemingly invincible, director Ali Selim is opening up about how the choice and the G’iah-Gravik super-powered fight came to be.“It starts with Kevin Feige saying, 'Any and all superpowers are fair game. Have fun,' and then we storyboarded it. We would be like, 'What are the superpowers that would happen next?'” Selim tells The Hollywood Reporter. “And then we would go through stunts and understand what superpowers can happen next and what can’t, just because of the physical positioning of the actors. And then, with VFX, some things just couldn’t work because they looked funny shifting from this to that in an instant.”",
+        "Parineeti Chopra and Raghav Chadha have been in news ever since they got engaged earlier this year in Delhi",
+         largdesc:"Parineeti Chopra and Raghav Chadha have been in news ever since they got engaged earlier this year in Delhi. The couple were expected to tie the knot once Parineeti completes her work commitments and now, we hear that the actress has wrapped up major schedules of her upcoming ventures. As per current reports, the couple will be tying the knot on September 24 in a lavish traditional ceremony in Udaipur, Rajasthan.",
       cat: "Hollywood",
     },
     {
