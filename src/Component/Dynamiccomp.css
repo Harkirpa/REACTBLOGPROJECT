@@ -1,0 +1,296 @@
+#get_start {
+    border: 2px solid blue;
+    color: blue;
+    font-weight: bold;
+    height: 50px;
+    width: 200px;
+    position: relative;
+    left: 102px;
+    top:7%;
+  }
+  .tthe {
+    position: relative;
+    top: -35px;
+    display: inline-block;
+    left: -6px;
+    color: #000000;
+    font: normal 33px/15px Montserrat;
+    transform: matrix(0, -1, 1, 0, 0, 0);
+  }
+  .nei {
+    top: -30px;
+    left: -15px;
+    display: inline-block;
+    position: relative;
+    color: #000000;
+    font: normal normal bold 60px/123px Montserrat;
+  }
+  .header2 {
+    display: flex;
+    justify-content: space-between;
+    padding: 1em 8em;
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+    background-color: #fff;
+    height: 82px;
+    border-bottom: 5px solid rgb(175, 174, 174);
+  }
+  .description {
+    text-align: justify;
+    left: 5px;
+    position: relative;
+  }
+  .descrheading {
+    position: relative;
+    top: -168px;
+    left: 458px;
+    width: 57vw;
+    text-align: justify;
+  }
+
+
+.Card_Header{
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+    background-color: white;
+    padding: 1em 8em;
+    box-shadow: 0px 3px 6px #00000029;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.dynamicContainer2{
+    width: 100%;
+    padding: 0.2em 5em 3em;
+    background-color: #FAFAFA;
+    margin-top: 20px;
+    z-index:4;
+}
+.footerContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    width: 25%;
+    border-radius: 20px;
+    padding: 10px;
+    &:hover {
+        transition: all .2s ease;
+        box-shadow: 0 0 10px rgba(33, 33, 33, 0.584);
+    }
+    & > img{
+        border-radius: 20px;
+        height: 11rem;
+        object-fit: cover;
+    }
+  }
+  .footercards {
+    display: flex;
+    justify-content: space-between;
+    border-top: 3px solid #f0f0f0;
+    padding-top: 10px;
+  }
+  .dynamicMoreItems {
+    font-size: 1.2rem;
+    font-weight: 500;
+    margin: 1em 0;
+   
+  }
+  .cardImage {
+    width: 300px;
+    height: 150px;
+  }
+  .cardImage img {
+    width: 165px;
+    height: 96%;
+    object-fit:cover;
+    border-radius: 10px;
+  }
+  .cardHeading {
+    font-size: 1rem;
+    font-weight: 500;
+    color: #404040;
+    overflow: hidden;
+    height: 4em;
+  }
+
+#shareIcon {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    float: left;
+    z-index: -1;
+    gap: 1.5rem;
+    top: 50vh;
+    left:44px;
+    padding-right: 10px;
+  }
+.Likebox , .Sharebox{
+    display: flex;
+    align-items: center;
+    color: #939393;
+    gap: 1rem;
+}
+#back {
+    width: 100px;
+    height: 50px;
+    left: 61px;
+    top: 115px;
+    position: relative;
+  }
+.Likebox img,
+.Sharebox img {
+  width: 38px;
+  height: 102px;
+  border: none;
+  margin-top: -48px;
+}
+
+.Content{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 60%;
+    position: relative;
+    top:55px;
+    margin: 0px 15em;
+}
+
+.Content_Title{
+    font-size: 2rem;
+    font-weight: 500;
+    text-align: justify;
+}
+
+.Author{
+    display: flex;
+    justify-content: space-between;
+}
+.userIcon{
+    display: flex;
+   border: none;
+}
+.userIcon img{
+    width: 80px;
+    height: 75px;
+    border: none;
+}
+.date {
+    left: 21px;
+    top:22px;
+    position: relative;
+  }
+  .logos{
+  font-size: 25px;
+  margin-left: 401px;
+  margin-top: 17px;
+  display: flex;
+ 
+  gap: 10px;
+}
+  .icon2 {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    width: 584px;
+    gap: 20px;
+    
+  }
+  .icon2 img {
+    width: 80px;
+    height: 60px;
+    left: -183px;
+    top: 1px;
+  }
+
+
+.Content_Image{
+    margin: 10px 0px;
+    object-fit: cover;
+    width: 100%;
+    height: 333px;
+    border-radius: 5px;
+}
+.Content_Desc .para{
+    margin-bottom: 10px;
+}
+.Content_Desc{
+    position: relative;
+    top: 161px;
+    margin: auto;
+    left: -459px;
+}
+
+
+@media screen and (max-width: 1100px){
+    .Card_Header{
+        padding: 1em;
+    }
+   
+ 
+    .Content{
+        margin: 0px 10em;
+    }
+   
+}
+@media only screen and (min-width:280px) and (max-width:800px){
+    #shareIcon{
+        display: none;
+       }
+    .Content{
+        width: 85%;
+        margin: auto;
+    }
+    
+    .Content_Image{
+        width:208px;
+        height:173px;
+        top:-29px;
+    }
+    .description{
+        left:-12px;
+        top:-56px;
+    }
+    .Likebox{
+      display: none;
+    }
+    .icon2{
+        top:-58px;
+        position: relative;
+    }
+    #back{
+        top:771px;
+        left:238px;
+        position: relative;
+    }
+    .Content_Title{
+        font-size: 1.5rem;
+        position: relative;
+        top:6px;
+    }
+    .cardHeading{
+        width:54vw;
+        left:52px;
+        top:-83px;
+        height:10%;
+        position: relative;
+    }
+
+    .Social_Sites{
+        align-self: flex-start;
+        height: 3em;
+        & svg{
+            height: 1.5em;
+            width: 1.5em;
+        }
+    }
+    footer{
+        display:none;
+    }
+    .userIcon, .logos{
+        display: none;
+    }
+    
+}
