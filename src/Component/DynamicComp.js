@@ -1,5 +1,5 @@
 import React, { useContext } from "react";
-import { Link, useLocation } from "react-router-dom";
+import { NavLink,Link,  useParams } from "react-router-dom";
 import { useNavigate } from "react-router-dom";
 import storeData from "../app/Store";
 import rythm from "../Images/rythm.svg"
@@ -19,10 +19,12 @@ const DynamicComp = () => {
   };
   const data = useContext(storeData);
   console.log(data);
-  const blog_id = useLocation().state.index;
+  // const blog_id = useLocation().state.index;
   //   console.log("bye"+blog_id)
-  const updateddata = data[0].filter((item) => item.id === blog_id);
-  //   console.log(updateddata)
+  const id=useParams().id
+  console.log( typeof id)
+  const updateddata = data[0].filter((item) => item.id === parseInt(id));
+    // console.log(updateddata)
 
   return (
     <>
@@ -96,14 +98,14 @@ const DynamicComp = () => {
                 return (
                   <div className="footerContainer" key={index}>
                     <div className="cardImage" onClick={handle}>
-                      <Link to="/dynamiccomp" state={{ index: item.id }}>
+                      <NavLink to={`/dynamiccomp/${item.id}`}>
                         <img
                           width="100%"
                           height="100%"
                           src={item.image}
                           alt="Not found"
                         ></img>
-                      </Link>
+                      </NavLink>
                     </div>
                    
                       <div className="cardHeading">{item.heading}</div>

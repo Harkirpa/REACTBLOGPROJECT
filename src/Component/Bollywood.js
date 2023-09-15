@@ -1,6 +1,6 @@
 import React, { useContext } from "react";
 import storeData from "../app/Store";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import Navbar from "./Navbar";
 import Footer from "./Footer";
 import "./bolly.css";
@@ -12,7 +12,6 @@ const Bollywood = () => {
       <div className="maines_box">
         <div className="box1">
           <div className="Headtag">Bollywood</div>
-          {/* <hr className="Hr" /> */}
           <div className="news_card123">
             {BData.filter((item) => item.cat === "Bollywood")
               .slice(0, 9)
@@ -20,9 +19,7 @@ const Bollywood = () => {
                 return (
                   <>
                     {
-                      <Link
-                        to="/dynamiccomp/"
-                        state={{ index: data.id }}
+                      <NavLink to={`/dynamiccomp/${data.id}`}
                         className={"nav_link"}
                       >
                         <div className="news_box">
@@ -44,7 +41,7 @@ const Bollywood = () => {
                             </span>
                           </div>
                         </div>
-                      </Link>
+                      </NavLink>
                     }
                   </>
                 );
@@ -53,15 +50,13 @@ const Bollywood = () => {
         </div>
         <div className="box2">
           <h1 className="head">Top Posts</h1>
-          {/* <hr className="Hr2" /> */}
+
           {BData.filter((item) => item.id === 10).map((data) => {
             return (
               <>
                 {
-                  <Link
-                    to="/dynamiccomp/"
-                    state={{ index: data.id }}
-                    className={"nav_link"}
+                  <NavLink to={`/dynamiccomp/${data.id}`}
+                  className={"nav_link"}
                   >
                     <div className="top_post">
                       <img
@@ -89,7 +84,7 @@ const Bollywood = () => {
                         </div>
                       </div>
                     </div>
-                  </Link>
+                  </NavLink>
                 }
               </>
             );
@@ -98,9 +93,7 @@ const Bollywood = () => {
             return (
               <>
                 {
-                  <Link
-                    to="/dynamiccomp/"
-                    state={{ index: data.id }}
+                  <NavLink to={`/dynamiccomp/${data.id}`}
                     className={"home1"}
                   >
                     <div className="top_post2">
@@ -124,7 +117,7 @@ const Bollywood = () => {
                         <span className="top-post-count">2</span>{" "}
                       </div>
                     </div>
-                  </Link>
+                  </NavLink>
                 }
               </>
             );
@@ -133,9 +126,8 @@ const Bollywood = () => {
             return (
               <>
                 {
-                  <Link
-                    to="/dynamiccomp/"
-                    state={{ index: data.id }}
+                  <NavLink to={`/dynamiccomp/${data.id}`}
+
                     className={"home1"}
                   >
                     <div className="top_post2">
@@ -159,7 +151,7 @@ const Bollywood = () => {
                         <span className="top-post-count">3</span>{" "}
                       </div>
                     </div>
-                  </Link>
+                  </NavLink>
                 }
               </>
             );
@@ -168,9 +160,7 @@ const Bollywood = () => {
             return (
               <>
                 {
-                  <Link
-                    to="/dynamiccomp/"
-                    state={{ index: data.id }}
+                  <NavLink to={`/dynamiccomp/${data.id}`}
                     className={"home1"}
                   >
                     <div className="top_post2">
@@ -194,7 +184,7 @@ const Bollywood = () => {
                         <span className="top-post-count">4</span>{" "}
                       </div>
                     </div>
-                  </Link>
+                  </NavLink>
                 }{" "}
                 <div className="ads">
                   <iframe

@@ -161,7 +161,8 @@ const Latest = () => {
       image:
         "https://img-s-msn-com.akamaized.net/tenant/amp/entityid/AA1bSdLG.img?w=534&h=300&m=6&x=0&y=110&s=301&d=158",
       description:
-        "Bollywood star Akshay Kumar was papped at the Mumbai airport on Monday. He recently returned from Uttarakhand after shooting for his upcoming film Oh My God- OMG 2. The actor's latest airport look has left his fans stunned as he paired his black athleisure look with a funky bag that literally looked like a dragon's face. Photos and videos of Kumar's outfit and bag are going viral on social media",
+        "Bollywood star Akshay Kumar was papped at the Mumbai airport on Monday.",
+         largdesc:"Bollywood star Akshay Kumar was papped at the Mumbai airport on Monday.He recently returned from Uttarakhand after shooting for his upcoming film Oh My God- OMG 2. The actor's latest airport look has left his fans stunned as he paired his black athleisure look with a funky bag that literally looked like a dragon's face. Photos and videos of Kumar's outfit and bag are going viral on social media",
       cat: "Bollywood",
     },
     {
@@ -171,7 +172,8 @@ const Latest = () => {
       image:
         "https://images.indianexpress.com/2023/07/ranveer-alia-karan-.jpg?w=640",
       description:
-        "Alia, Ranveer and Karan participated in India's International Movement to Unite Nations (IIMUN's) Back to School series to promote the film recently. At the event, Ranveer wondered if Karan is more like Miss Braganza (Archana Puran Singh) from the film Kuch Kuch Hota hai or Narayan Shankar (Amitabh Bachchan) from Mohabbatein. But Alia told him, he is neither. “Karan is Karan. You have to create a new character for him,” she said",
+        "Alia, Ranveer and Karan participated in India's International Movement to Unite Nations (IIMUN's) Back to School",
+         largdesc:"Alia, Ranveer and Karan participated in India's International Movement to Unite Nations (IIMUN's) Back to Schoolseries to promote the film recently. At the event, Ranveer wondered if Karan is more like Miss Braganza (Archana Puran Singh) from the film Kuch Kuch Hota hai or Narayan Shankar (Amitabh Bachchan) from Mohabbatein. But Alia told him, he is neither. “Karan is Karan. You have to create a new character for him,” she said",
       cat: "bollywood",
     },
     {
@@ -369,33 +371,32 @@ const Latest = () => {
     {
       id: 34,
       heading:
-        "Frozen meat and poultry products recalled over lack of federal inspection",
+        "Celebrity chef and actor Ranveer Brar opens Kashkan restaurant in Dubai's Festival City Mal",
       image:
-        "https://www.foodsafetynews.com/files/2023/07/Kingsland-Food-Processing-Corp.-recall-660x374.png",
+        "https://img.etimg.com/thumb/msid-103329847,width-300,height-225,imgsize-162194,,resizemode-75/between-the-buckingham-murder-and-masterchef-india-ranveer-opens-dubai-restaurant.jpg",
       description:
-        "Kingsland Food Processing Corp., of Maspeth, NY, is recallingof various frozen meat and poultry products .",
-        largdesc: "Kingsland Food Processing Corp., of Maspeth, NY, is recalling an undetermined amount of various frozen meat and poultry products that were produced without the benefit of federal inspection,according to the U.S. Department of Agriculture's Food Safety and Inspection Service (FSIS).  The frozen meat and poultry products were produced on various dates ranging from Nov. 1, 2022, through July 20, 2023. FSIS is concerned that some product may be in consumers' refrigerators or freezers. ",
+        "Brar's venture into the culinary world with Kashkan came after dedicating two months to perfecting the restaurant's diverse menu. During this period, he made exciting discoveries, such as the Naga black sesame chicken, a dish that captures the flavors of Nagaland.",
+        largdesc: "Renowned celebrity chef and actor Ranveer Brar, known for his recent appearance in 'Modern Love Stories: Mumbai,' has launched a new restaurant in Dubai called Kashkan. Located in Dubai's Festival City Mall, the restaurant offers a pan-Indian menu that spans the length and breadth of the country, from Kashmir to Kanyakumari, reflecting its name. ",
       cat: "Food",
     },
     {
       id: 35,
-      heading: "Multi-country Salmonella outbreak linked to tomatoes.",
+      heading: "Two young brothers operate a food cart in Amritsar after school hours, video makes netizens emotional",
       image:
-        "https://www.foodsafetynews.com/files/2023/07/dreamstime_small-tomatoes--660x374.jpg",
+        "https://images.indianexpress.com/2023/09/Two-young-brothers-operate-a-food-cart-in-Amritsar-after-school-hours.jpg?w=640",
       description:
-        "From August 2022 to mid-July 2023, 92 cases of Salmonella Senftenberg have been reported, 12 people have been hospitalized",
-        largdesc: "From August 2022 to mid-July 2023, 92 cases of Salmonella Senftenberg have been reported, 12 people have been hospitalized, and one person died in Germany. Most patients are female, while 28 are male.Infections have occurred in all age groups.Germany is the most affected country, with 26 patients, followed by France with 16, Finland with 12, and Sweden with 11. The United States has recorded two patients.The first U.S. case is a 47-year-old female reported in October 2022. The second is an immunocompromised 42-year-old male with disease onset in April 2023. This person had a liver transplant in 2022.",
+        "The video was originally shared on Instagram by a page called Amritsar Walking Tours which is run by a food blogger.",
+        largdesc: "Some children grow up fast because they have to support their parents and face the hardships of life. A video posted on X, formerly Twitter, shows the resilient story of two brothers who opened their food cart in Amritsar",
       cat: "Food",
     },
     {
       id: 36,
-      heading:
-        "Rising tomato prices: The latest weapon against Muslims in India",
+      heading:"NewsLifestyleFood & WineChef Ranveer Brar shares the rich history of Dal Makhani: 'A result of friends getting together after partition'Chef Ranveer Brar shares the rich history of Dal Makhani: ‘A result of friends getting together after partition’",
       image:
-        "https://www.aljazeera.com/wp-content/uploads/2023/07/AP23192503948195-1690346487.jpg?resize=770%2C513&quality=80",
+        "https://images.indianexpress.com/2023/08/dal-makhani.jpg?w=640",
       description:
-        "Sarma then answered his own question with a straight-faced lie. ",
-        largdesc: "Sarma then answered his own question with a straight-faced lie. “It is Miya sellers who are selling vegetables at higher rates,” he claimed,referring to Assam's Bengali-speaking Muslims, who have lived in the state for generations but are accused by Sarma's Bharatiya Janata Party and its Hindu right-wing ideological allies of being illegal Bangladeshi migrants.",
+        "Dal Makhani, the popular Indian lentil dish, is loved by everyone — both in the country and outside of its borders. Prepared with hefty amounts of ghee and various seasonings, the red kidney beans and whole black lentils (urad) are slowly cooked in a rich, tomato-based sauce",
+        largdesc: "Dal Makhani, the popular Indian lentil dish, is loved by everyone — both in the country and outside of its borders. Prepared with hefty amounts of ghee and various seasonings, the red kidney beans and whole black lentils (urad) are slowly cooked in a rich, tomato-based sauce. The name makhani, meaning butter, comes from the last addition to the dish — a drizzle of melted ghee or butter over the dal that gives the classic its velvety flavour.So, on the occasion of Independence Day, Chef Ranveer Brar took to Instagram to share the rich history of Dal Makhani, which he believes is a result of the partition of 1947",
       cat: "Food",
     },
     {
@@ -533,7 +534,8 @@ const Latest = () => {
       image:
         "https://patch.com/img/cdn20/users/26494162/20230307/074929/styles/patch_image/public/dscn4449___07194251416.jpg?width=1200",
       description:
-        "Runners will participate in a full marathon and charity half marathon on Sunday, and a 5K race and kids race on Saturday. The 5K will take place in Elysian Park, ending with a view of Dodger Stadium",
+        "Runners will participate in a full marathon and charity half marathon on Sunday, and a 5K race",
+        largdesc: "Runners will participate in a full marathon and charity half marathon on Sunday, and a 5K raceand kids race on Saturday. The 5K will take place in Elysian Park, ending with a view of Dodger Stadium",
       cat: "Hollywood",
     },
     {
@@ -831,9 +833,10 @@ const Latest = () => {
     },
     {
       id: 79,
-      heading: "Top 6: Food items to keep you fuller, fit",
-      image: "https://images.indianexpress.com/2014/07/lady-apple-wellness1.jpg?w=630",
-      description: "Soup,Oatmeal,Apples,Eggs,Dark chocolate,Avocados",
+      heading: "‘Not exciting enough to be just serving food at this stage and age’: Chef Vikas Khanna",
+      image: "https://images.indianexpress.com/2023/08/vikas-khanna_1200.jpeg?w=640",
+      description: "The renowned chef, who feels Indian cuisine should be on the global map on a huge scale, opened up about the process that had been almost five years in the making",
+      largdesc:"Trust chef Vikas Khanna to keep reinventing himself. After working as a filmmaker, author, and restaurateur, the 51-year-old recently revealed his artistic passion by unveiling in New York City a Konark Temple replica made by artisans from Odisha during the pandemic.The renowned chef, who feels Indian cuisine should be on the global map on a huge scale, opened up about the process that had been almost five years in the making",
       cat: "Food",
     },
     {
@@ -857,7 +860,7 @@ const Latest = () => {
             <Route path="/hollywood" element={<Hollywood />} />
             <Route path="/fitness" element={<Fitness />} />
             <Route path="/food" element={<Food />} />
-            <Route path="/dynamiccomp" element={<DynamicComp/>}/>
+            <Route path="/dynamiccomp/:id" element={<DynamicComp/>}/>
           </Routes>
         </BrowserRouter>
       </storeData.Provider>

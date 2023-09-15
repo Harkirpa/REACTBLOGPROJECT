@@ -1,8 +1,8 @@
 import React, { useContext } from "react";
-import { Link } from "react-router-dom";
+import { NavLink} from "react-router-dom";
 import Footer from "./Footer";
 import Navbar from "./Navbar";
-
+import { handle } from "./handle";
 import storeData from "../app/Store";
 const Home = () => {
     // const [LoadMore , setLoadMore] = useState(false)
@@ -46,15 +46,13 @@ const Home = () => {
                             return (
                                 <>
                                     {
-                                        <Link
-                                            to="/dynamiccomp/"
-                                            state={{ index: element.id }}
+                                       <NavLink to={`/dynamiccomp/${element.id}`}
                                             className={"nav_link"}
                                         >
                                             <img src={element.image} alt="not found"></img>
                                             <h3>{element.heading}</h3>
                                             <p>{element.description}</p>
-                                        </Link>
+                                        </NavLink>
                                     }
 
                                 </>
@@ -72,15 +70,13 @@ const Home = () => {
                             return (
                                 <>
                                     {
-                                        <Link
-                                            to="/dynamiccomp/"
-                                            state={{ index: element.id }}
+                                       <NavLink to={`/dynamiccomp/${element.id}`}
                                             className={"nav_link"}
                                         >
                                             <img src={element.image} alt="not found"></img>
                                             <h3>{element.heading}</h3>
                                             <p>{element.description}</p>
-                                        </Link>
+                                        </NavLink>
                                     }
 
                                 </>
@@ -96,15 +92,13 @@ const Home = () => {
                             return (
                                 <>
                                     {
-                                        <Link
-                                            to="/dynamiccomp/"
-                                            state={{ index: element.id }}
+                                      <NavLink to={`/dynamiccomp/${element.id}`}
                                             className={"nav_link"}
                                         >
                                             <img src={element.image} alt="not found"></img>
                                             <h3>{element.heading}</h3>
                                             <p>{element.description}</p>
-                                        </Link>
+                                        </NavLink>
                                     }
 
                                 </>
@@ -121,13 +115,11 @@ const Home = () => {
                             return (
                                 <>
                                     {
-                                        <Link
-                                            to="/dynamiccomp/"
-                                            state={{ index: data.id }}
+                                       <NavLink to={`/dynamiccomp/${data.id}`}
                                             className={"nav_link"}
                                         >
-                                            <div className="latest_left1">
-                                                <div className="view">
+                                            <div className="latest_left1" onClick={handle}>
+                                                <div className="view" >
                                                     <img src={data.image} alt="not found"></img>
                                                 </div>
                                                 <div className="latest_left_content">
@@ -137,7 +129,7 @@ const Home = () => {
                                             </div>
                                             <hr></hr>
 
-                                        </Link>
+                                        </NavLink>
                                     }
 
                                 </>
@@ -151,11 +143,10 @@ const Home = () => {
                                 return (
                                     <>
                                         {
-                                            <Link to="/dynamiccomp/"
-                                                state={{ index: data.id }} className={"nav_link"} >
+                                           <NavLink to={`/dynamiccomp/${data.id}`} className={"nav_link"} >
                                                 <img src={data.image} alt="not found"></img>
 
-                                            </Link>
+                                            </NavLink>
                                         }
 
                                     </>
@@ -181,11 +172,11 @@ const Home = () => {
                             <>
                                 {
                                     <div className='hov'>
-                                        <Link to={`/${data.id}`} className={"nav_link"} >
+                                    <NavLink to={`/dynamiccomp/${data.id}`} className={"nav_link"} >
                                             <img src={data.image} alt="not found"></img>
                                             <h3>{data.heading}</h3>
                                            
-                                        </Link>
+                                        </NavLink>
                                     </div>
                                 }
 
@@ -201,14 +192,14 @@ const Home = () => {
                         return (
                             <>
                                 {
-                                    <Link to={`/${data.id}`} className={"nav_link"} >
-                                        <div className='topsmall-first'>
+                                    <NavLink to={`/dynamiccomp/${data.id}`}  className={"nav_link"} >
+                                        <div className='topsmall-first' onClick={handle}>
                                             <img src={data.image} alt="not found"></img>
                                             <h3>{data.heading}</h3>
                                         </div>
 
                                     
-                                    </Link>
+                                    </NavLink>
                                 }
 
                             </>
@@ -221,14 +212,14 @@ const Home = () => {
                         return (
                             <>
                                 {
-                                    <Link to={`/${data.id}`} className={"nav_link"} >
-                                        <div className='topsmall-first'>
+                                    <NavLink to={`/dynamiccomp/${data.id}`}  className={"nav_link"} >
+                                        <div className='topsmall-first' onClick={handle}>
                                             <img src={data.image} alt="not found"></img>
                                             <h3>{data.heading}</h3>
                                         </div>
 
 
-                                    </Link>
+                                    </NavLink>
                                 }
 
                             </>
@@ -241,14 +232,14 @@ const Home = () => {
                         return (
                             <>
                                 {
-                                    <Link to={`/${data.id}`} className={"nav_link"} >
-                                        <div className='topsmall-first'>
+                                  <NavLink to={`/dynamiccomp/${data.id}`} className={"nav_link"} >
+                                        <div className='topsmall-first' onClick={handle}>
                                             <img src={data.image} alt="not found"></img>
                                             <h3>{data.heading}</h3>
                                         </div>
 
                                        
-                                    </Link>
+                                    </NavLink>
                                 }
 
                             </>
@@ -270,13 +261,12 @@ const Home = () => {
         return(
             <>
             {
-                <Link to={`/${data.id}`} className={"nav_link"} >
-                     <div className='latest_story_child'>
-          
-            <h3>{data.heading}</h3>
-            <p>{data.description}</p>
+                <NavLink to={`/dynamiccomp/${data.id}`} className={"nav_link"} >
+                     <div className='latest_story_child' onClick={handle}>
+                        <h3>{data.heading}</h3>
+                        <p>{data.description}</p>
             </div>
-                </Link>
+                </NavLink>
             }
             
             </>

@@ -1,6 +1,6 @@
 import React, { useContext } from "react";
 import storeData from "../app/Store";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import Navbar from "./Navbar";
 import Footer from "./Footer";
 import "./bolly.css";
@@ -20,9 +20,7 @@ const Technology = () => {
                 return (
                   <>
                     {
-                      <Link
-                        to="/dynamiccomp/"
-                        state={{ index: data.id }}
+                     <NavLink to={`/dynamiccomp/${data.id}`}
                         className={"nav_link"}
                       >
                         <div className="news_box">
@@ -44,7 +42,7 @@ const Technology = () => {
                             </span>
                           </div>
                         </div>
-                      </Link>
+                      </NavLink>
                     }
                   </>
                 );
@@ -58,9 +56,7 @@ const Technology = () => {
             return (
               <>
                 {
-                  <Link
-                    to="/dynamiccomp/"
-                    state={{ index: data.id }}
+                 <NavLink to={`/dynamiccomp/${data.id}`}
                     className={"nav_link"}
                   >
                     <div className="top_post">
@@ -89,7 +85,7 @@ const Technology = () => {
                         </div>
                       </div>
                     </div>
-                  </Link>
+                  </NavLink>
                 }
               </>
             );
@@ -98,9 +94,7 @@ const Technology = () => {
             return (
               <>
                 {
-                  <Link
-                    to="/dynamiccomp/"
-                    state={{ index: data.id }}
+                <NavLink to={`/dynamiccomp/${data.id}`}
                     className={"home1"}
                   >
                     <div className="top_post2">
@@ -126,7 +120,7 @@ const Technology = () => {
                         <span className="top-post-count">2</span>{" "}
                       </div>
                     </div>
-                  </Link>
+                  </NavLink>
                 }
               </>
             );
@@ -135,9 +129,7 @@ const Technology = () => {
             return (
               <>
                 {
-                  <Link
-                    to="/dynamiccomp/"
-                    state={{ index: data.id }}
+               <NavLink to={`/dynamiccomp/${data.id}`}
                     className={"home1"}
                   >
                     <div className="top_post2">
@@ -163,7 +155,7 @@ const Technology = () => {
                         <span className="top-post-count">3</span>{" "}
                       </div>
                     </div>
-                  </Link>
+                  </NavLink>
                 }
               </>
             );
@@ -172,9 +164,7 @@ const Technology = () => {
             return (
               <>
                 {
-                  <Link
-                    to="/dynamiccomp/"
-                    state={{ index: data.id }}
+                 <NavLink to={`/dynamiccomp/${data.id}`}
                     className={"home1"}
                   >
                     <div className="top_post2">
@@ -200,7 +190,7 @@ const Technology = () => {
                         <span className="top-post-count">4</span>{" "}
                       </div>
                     </div>
-                  </Link>
+                  </NavLink>
               }{" "}
               <div className="ads">
                 <iframe

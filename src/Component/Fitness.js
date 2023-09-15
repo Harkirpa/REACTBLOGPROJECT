@@ -1,6 +1,6 @@
 import React, { useContext } from "react";
 import storeData from "../app/Store";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import Navbar from "./Navbar";
 import Footer from "./Footer";
 
@@ -13,7 +13,6 @@ const Fitness = () => {
       <div className="maines_box">
         <div className="box1">
           <div className="Headtag">Fitness</div>
-         
           <div className="news_card123">
             {FData.filter((item) => item.cat === "Fitness")
               .slice(0, 9)
@@ -21,9 +20,7 @@ const Fitness = () => {
                 return (
                   <>
                     {
-                      <Link
-                        to="/dynamiccomp/"
-                        state={{ index: data.id }}
+                      <NavLink to={`/dynamiccomp/${data.id}`}
                         className={"nav_link"}
                       >
                         <div className="news_box">
@@ -45,7 +42,7 @@ const Fitness = () => {
                             </span>
                           </div>
                         </div>
-                      </Link>
+                      </NavLink>
                     }
                   </>
                 );
@@ -54,14 +51,12 @@ const Fitness = () => {
         </div>
         <div className="box2">
           <h1 className="head">Top Posts</h1>
-        
+
           {FData.filter((item) => item.id === 32).map((data) => {
             return (
               <>
                 {
-                  <Link
-                    to="/dynamiccomp/"
-                    state={{ index: data.id }}
+                  <NavLink to={`/dynamiccomp/${data.id}`}
                     className={"nav_link"}
                   >
                     <div className="top_post">
@@ -90,7 +85,7 @@ const Fitness = () => {
                         </div>
                       </div>
                     </div>
-                  </Link>
+                  </NavLink>
                 }
               </>
             );
@@ -99,9 +94,7 @@ const Fitness = () => {
             return (
               <>
                 {
-                  <Link
-                    to="/dynamiccomp/"
-                    state={{ index: data.id }}
+                  <NavLink to={`/dynamiccomp/${data.id}`}
                     className={"home1"}
                   >
                     <div className="top_post2">
@@ -127,7 +120,7 @@ const Fitness = () => {
                         <span className="top-post-count">2</span>{" "}
                       </div>
                     </div>
-                  </Link>
+                  </NavLink>
                 }
               </>
             );
@@ -136,9 +129,7 @@ const Fitness = () => {
             return (
               <>
                 {
-                  <Link
-                    to="/dynamiccomp/"
-                    state={{ index: data.id }}
+                  <NavLink to={`/dynamiccomp/${data.id}`}
                     className={"home1"}
                   >
                     <div className="top_post2">
@@ -164,7 +155,7 @@ const Fitness = () => {
                         <span className="top-post-count">3</span>{" "}
                       </div>
                     </div>
-                  </Link>
+                  </NavLink>
                 }
               </>
             );
@@ -173,9 +164,7 @@ const Fitness = () => {
             return (
               <>
                 {
-                  <Link
-                    to="/dynamiccomp/"
-                    state={{ index: data.id }}
+                  <NavLink to={`/dynamiccomp/${data.id}`}
                     className={"home1"}
                   >
                     <div className="top_post2">
@@ -201,21 +190,21 @@ const Fitness = () => {
                         <span className="top-post-count">4</span>{" "}
                       </div>
                     </div>
-                  </Link>
+                  </NavLink>
                 }
-                     <div className="ads">
-        <iframe
-          src="https://giphy.com/embed/bcBaSxzehXo8YnKphP"
-          style={{ width: "328px", height: "100%", border: "none" }}
-          title="ad"
-        ></iframe>
-      </div>
+                <div className="ads">
+                  <iframe
+                    src="https://giphy.com/embed/bcBaSxzehXo8YnKphP"
+                    style={{ width: "328px", height: "100%", border: "none" }}
+                    title="ad"
+                  ></iframe>
+                </div>
               </>
             );
           })}
         </div>
       </div>
-     <Footer/>
+      <Footer />
     </>
   );
 };
