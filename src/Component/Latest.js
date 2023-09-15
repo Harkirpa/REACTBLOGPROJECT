@@ -92,12 +92,12 @@ const Latest = () => {
     {
       id: 8,
       heading:
-        "Check out the beautiful shooting locations of 'Rocky and Rani Ki Prem Kahani'",
+        "CCONFIRMED: Arjun Kapoor to play the villain in Ajay Devgn & Rohit Shetty’s Singham Again",
       image:
-        "https://www.bing.com/th?id=OVFT.wccBAKekX8TAR-3WLEEsQC&pid=News&w=234&h=132&c=14&rs=2&qlt=90",
+        "https://stat4.bollywoodhungama.in/wp-content/uploads/2023/09/CONFIRMED-Arjun-Kapoor-to-play-the-villain-in-Ajay-Devgn-Rohit-Shettys-Singham-Again.jpeg",
       description:
-        "Rocky Aur Rani Ki Prem Kahaani has finally hit the theaters today. The much-awaited family-drama cum romantic movie is directed by Karan Johar and has Alia Bhatt and Ranveer Singh in the lead roles.",
-        largdesc:"Rocky Aur Rani Ki Prem Kahaani has finally hit the theaters today. The much-awaited family-drama cum romantic movie is directed by Karan Johar and has Alia Bhatt and Ranveer Singh in the lead roles. The movie also marks Karan Johar's return to direction after seven years! We are already smitten with Alia's pretty sarees in the amazing locations",
+        "Rohit Shetty's Singham Again is among the most awaited films of Indian Cinema, with one of the biggest ensemble cast of all time",
+        largdesc:"Rohit Shetty's Singham Again is among the most awaited films of Indian Cinema, with one of the biggest ensemble cast of all time. The film stars Ajay Devgn, Kareena Kapoor, Ranveer Singh, Akshay Kumar and Deepika Padukone in lead roles with Tiger Shroff as the baddie carrying the story of Sooryavanshi forward. Bollywood Hungama has confirmed news that the newest member of Rohit Shetty cop universe is Arjun Kapoor.",
       cat: "Bollywood",
     },
     {

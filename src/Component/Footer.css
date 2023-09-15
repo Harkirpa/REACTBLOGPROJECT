@@ -3,7 +3,6 @@
     width: 100%;
     position: relative;
     z-index: 7;
-   
     background-color: lightblue;
    
   }
@@ -82,10 +81,10 @@
         
     }
     .footerHr{
-        margin-left: 38%;
+        margin-left: 1%;
     }
     .footerContainner>div {
-        width: 90%;
+        width: 47%;
       
     }
   .blo-des{
