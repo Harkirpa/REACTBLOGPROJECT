@@ -92,7 +92,7 @@ const DynamicComp = () => {
           <div className="footercards">
             {data[0]
               .filter(
-                (item) => item.id % 4 === 0 && item.cat === updateddata[0].cat
+                (item) => item.id % 5 === 0 && item.cat === updateddata[0].cat
               )
               .map((item, index) => {
                 return (

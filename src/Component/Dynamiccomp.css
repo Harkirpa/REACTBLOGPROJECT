@@ -262,9 +262,7 @@
         position: relative;
     }
     #back{
-        top:771px;
-        left:238px;
-        position: relative;
+      display: none;
     }
     .Content_Title{
         font-size: 1.5rem;

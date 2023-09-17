@@ -15,7 +15,7 @@ const Footer = () => {
           </span>
         </div>
         <div>
-          <h2 className="about1">Usefull Links</h2>
+          <h2 className="about1">Useful Links</h2>
           <hr className="footerHr1" />
           <Link to={"/technology"} onClick={handle}>
             <span className="text-gray">Technology</span>
@@ -34,7 +34,7 @@ const Footer = () => {
           </Link>
         </div>{" "}
         <div>
-          <h2 className="about1">Ours Services</h2>
+          <h2 className="about1">Our Services</h2>
           <hr className="footerHr1" />
           <span className="links1">Github</span>
           <span className="links1">Help</span>

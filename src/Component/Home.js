@@ -119,7 +119,7 @@ const Home = () => {
                                             className={"nav_link"}
                                         >
                                             <div className="latest_left1" onClick={handle}>
-                                                <div className="view" >
+                                                <div className="viewhome" >
                                                     <img src={data.image} alt="not found"></img>
                                                 </div>
                                                 <div className="latest_left_content">
