@@ -264,7 +264,13 @@ const Home = () => {
                 <NavLink to={`/dynamiccomp/${data.id}`} className={"nav_link"} >
                      <div className='latest_story_child' onClick={handle}>
                         <h3>{data.heading}</h3>
-                        <p>{data.description}</p>
+                        <p>{data.largdesc}</p>
+                        <span className="travel">
+                              Travel
+                              <span className="travel_details">
+                                /Sept 5 2023
+                              </span>{" "}
+                            </span>
             </div>
                 </NavLink>
             }
