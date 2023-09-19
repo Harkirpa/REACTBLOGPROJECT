@@ -137,9 +137,9 @@ const Home = () => {
                         })
                     }
 
-                    <div className='the-latest-loadmore-bottom'>
+                    <div className='loadmore'>
                         {
-                            Data.filter((item) => item.id === 55).map((data) => {
+                            Data.filter((item) => item.id === 79).map((data) => {
                                 return (
                                     <>
                                         {
@@ -279,10 +279,8 @@ const Home = () => {
         )
     })
 }
-   
  </div>
- 
-    <Footer />
+<Footer />
             </>
             );
 };

@@ -133,11 +133,20 @@
     gap: 1rem;
 }
 #back {
-    width: 100px;
-    height: 50px;
-    left: 61px;
-    top: 115px;
+    background: #fff;
+    border: 2px solid #212529;
+    border-radius: 5px;
+    box-shadow: 2px 2px 2px 0 rgba(59,58,58,.5), 7px 7px 20px 0 rgba(0,0,0,.1), 4px 4px 5px 0 rgba(0,0,0,.1);
+    color: #212529;
+    cursor: pointer;
+    font-family: Lato,sans-serif;
+    font-weight: 500;
+    height: 40px;
     position: relative;
+    top: 106px;
+    left:61px;
+    width: 89px;
+    z-index: 0;
   }
 .Likebox img,
 .Sharebox img {
@@ -229,9 +238,14 @@
     padding: 1em 2em;
     & #get_start{
         font-size: 1.2em;
-        left:-44px;
+        left:-10px;
         width:121px;
     }
+}
+#back{
+   left:129px;
+    top: 74px;
+    width: 100px;
 }
     #shareIcon{
         display: none;
@@ -258,16 +272,14 @@
     }
     .icon2{
         top:26px;
-        left:-196px;
+        left:-48px;
+        width: 265px;
         position: relative;
-    }
-    #back{
-      display: none;
     }
     .Content_Title{
         font-size: 1.5rem;
         position: relative;
-        top:6px;
+        top:22px;
     }
     .cardHeading{
         width:54vw;
@@ -301,14 +313,10 @@
     align-self: flex-end;
    }
     .footercards{
-    
       max-width: 2%;
     flex-direction: column;
       display: flex;
       justify-content: center;
       align-items: center;
-     
-    
-}
-    
+  }
 }

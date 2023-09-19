@@ -151,6 +151,9 @@ a {
   .head_card {
     flex-direction: column;
   }
+  .head{
+    width:80%;
+  }
   .news_box {
     flex-direction: column;
   }
@@ -167,9 +170,6 @@ a {
     position: relative;
     left: 18px;
     top: -7px;
-  }
-  .travel {
-    display: none;
   }
   .top_post_img1 {
     margin-top: 10%;
