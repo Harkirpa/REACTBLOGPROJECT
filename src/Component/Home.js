@@ -5,15 +5,7 @@ import Navbar from "./Navbar";
 import { handle } from "./handle";
 import storeData from "../app/Store";
 const Home = () => {
-    // const [LoadMore , setLoadMore] = useState(false)
-    // const ToggleLoadMore = ()=>{
-    //     setLoadMore(!LoadMore);
-    //     if(LoadMore){
-    //       ScrollToTop();
-    //     }
-    // }
     const [Data] = useContext(storeData);
-
     return (
         <>
             <Navbar />
