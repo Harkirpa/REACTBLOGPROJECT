@@ -1,5 +1,5 @@
 import React, { useContext } from "react";
-import { NavLink} from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import Footer from "./Footer";
 import Navbar from "./Navbar";
 import { handle } from "./handle";
@@ -28,7 +28,7 @@ const Home = () => {
                 </div>
             </div>
             <h2 className="thelatest">The Latest</h2>
-          
+
             <div className="home_latest">
                 <div className="home_latest2">
                     {
@@ -38,7 +38,7 @@ const Home = () => {
                             return (
                                 <>
                                     {
-                                       <NavLink to={`/dynamiccomp/${element.id}`}
+                                        <NavLink to={`/dynamiccomp/${element.id}`}
                                             className={"nav_link"}
                                         >
                                             <img src={element.image} alt="not found"></img>
@@ -62,7 +62,7 @@ const Home = () => {
                             return (
                                 <>
                                     {
-                                       <NavLink to={`/dynamiccomp/${element.id}`}
+                                        <NavLink to={`/dynamiccomp/${element.id}`}
                                             className={"nav_link"}
                                         >
                                             <img src={element.image} alt="not found"></img>
@@ -84,7 +84,7 @@ const Home = () => {
                             return (
                                 <>
                                     {
-                                      <NavLink to={`/dynamiccomp/${element.id}`}
+                                        <NavLink to={`/dynamiccomp/${element.id}`}
                                             className={"nav_link"}
                                         >
                                             <img src={element.image} alt="not found"></img>
@@ -107,7 +107,7 @@ const Home = () => {
                             return (
                                 <>
                                     {
-                                       <NavLink to={`/dynamiccomp/${data.id}`}
+                                        <NavLink to={`/dynamiccomp/${data.id}`}
                                             className={"nav_link"}
                                         >
                                             <div className="latest_left1" onClick={handle}>
@@ -135,7 +135,7 @@ const Home = () => {
                                 return (
                                     <>
                                         {
-                                           <NavLink to={`/dynamiccomp/${data.id}`} className={"nav_link"} >
+                                            <NavLink to={`/dynamiccomp/${data.id}`} className={"nav_link"} >
                                                 <img src={data.image} alt="not found"></img>
 
                                             </NavLink>
@@ -146,7 +146,7 @@ const Home = () => {
                             })
                         }
                     </div>
-                  
+
                 </div >
                 <div className='latest_parent'>
                     <div className="latest_ads"> <iframe
@@ -154,43 +154,116 @@ const Home = () => {
                         style={{ width: "328px", height: "100%", border: "none" }}
                         title="ad"
                     ></iframe></div>
-              
-           
-            <div className='top1st-big'>
-                <h3>Top Post</h3>
+
+
+                    <div className='top1st-big'>
+                        <h3>Top Post</h3>
+                        {
+                            Data.filter((item) => item.id === 80).map((data) => {
+                                return (
+                                    <>
+                                        {
+                                            <div className='hov'>
+                                                <NavLink to={`/dynamiccomp/${data.id}`} className={"nav_link"} >
+                                                    <img src={data.image} alt="not found"></img>
+                                                    <h3>{data.heading}</h3>
+
+                                                </NavLink>
+                                            </div>
+                                        }
+
+                                    </>
+                                )
+                            })
+                        }
+                    </div>
+                    <div className='top2nd-smal'>
+
+                        {
+                            Data.filter((item) => item.id === 79).map((data) => {
+                                return (
+                                    <>
+                                        {
+                                            <NavLink to={`/dynamiccomp/${data.id}`} className={"nav_link"} >
+                                                <div className='topsmall-first' onClick={handle}>
+                                                    <img src={data.image} alt="not found"></img>
+                                                    <h3>{data.heading}</h3>
+                                                </div>
+
+
+                                            </NavLink>
+                                        }
+
+                                    </>
+                                )
+                            })
+                        }
+
+                        {
+                            Data.filter((item) => item.id === 69).map((data) => {
+                                return (
+                                    <>
+                                        {
+                                            <NavLink to={`/dynamiccomp/${data.id}`} className={"nav_link"} >
+                                                <div className='topsmall-first' onClick={handle}>
+                                                    <img src={data.image} alt="not found"></img>
+                                                    <h3>{data.heading}</h3>
+                                                </div>
+
+
+                                            </NavLink>
+                                        }
+
+                                    </>
+                                )
+                            })
+                        }
+
+                        {
+                            Data.filter((item) => item.id === 59).map((data) => {
+                                return (
+                                    <>
+                                        {
+                                            <NavLink to={`/dynamiccomp/${data.id}`} className={"nav_link"} >
+                                                <div className='topsmall-first' onClick={handle}>
+                                                    <img src={data.image} alt="not found"></img>
+                                                    <h3>{data.heading}</h3>
+                                                </div>
+
+
+                                            </NavLink>
+                                        }
+
+                                    </>
+                                )
+                            })
+                        }
+
+                    </div>
+
+                </div>
+            </div>
+
+
+            <h2 className='latest_story_header'>Latest Stories</h2>
+            <div className='latest_story_parent'>
+
                 {
-                    Data.filter((item) => item.id === 80).map((data) => {
+                    Data.filter((item) => item.id > 40 && item.id < 44).map((data) => {
                         return (
                             <>
                                 {
-                                    <div className='hov'>
                                     <NavLink to={`/dynamiccomp/${data.id}`} className={"nav_link"} >
-                                            <img src={data.image} alt="not found"></img>
+                                        <div className='latest_story_child' onClick={handle}>
                                             <h3>{data.heading}</h3>
-                                           
-                                        </NavLink>
-                                    </div>
-                                }
-
-                            </>
-                        )
-                    })
-                }
-          </div>
-            <div className='top2nd-smal'>
-
-                {
-                    Data.filter((item) => item.id === 79).map((data) => {
-                        return (
-                            <>
-                                {
-                                    <NavLink to={`/dynamiccomp/${data.id}`}  className={"nav_link"} >
-                                        <div className='topsmall-first' onClick={handle}>
-                                            <img src={data.image} alt="not found"></img>
-                                            <h3>{data.heading}</h3>
+                                            <p>{data.largdesc}</p>
+                                            <span className="travel">
+                                                Travel
+                                                <span className="travel_details">
+                                                    /Sept 5 2023
+                                                </span>{" "}
+                                            </span>
                                         </div>
-
-                                    
                                     </NavLink>
                                 }
 
@@ -198,82 +271,9 @@ const Home = () => {
                         )
                     })
                 }
-
-                {
-                    Data.filter((item) => item.id === 69).map((data) => {
-                        return (
-                            <>
-                                {
-                                    <NavLink to={`/dynamiccomp/${data.id}`}  className={"nav_link"} >
-                                        <div className='topsmall-first' onClick={handle}>
-                                            <img src={data.image} alt="not found"></img>
-                                            <h3>{data.heading}</h3>
-                                        </div>
-
-
-                                    </NavLink>
-                                }
-
-                            </>
-                        )
-                    })
-                }
-
-                {
-                    Data.filter((item) => item.id === 59).map((data) => {
-                        return (
-                            <>
-                                {
-                                  <NavLink to={`/dynamiccomp/${data.id}`} className={"nav_link"} >
-                                        <div className='topsmall-first' onClick={handle}>
-                                            <img src={data.image} alt="not found"></img>
-                                            <h3>{data.heading}</h3>
-                                        </div>
-
-                                       
-                                    </NavLink>
-                                }
-
-                            </>
-                        )
-                    })
-                }
-
             </div>
-
-            </div>
-          </div>
-       
- 
- <h2 className='latest_story_header'>Latest Stories</h2>
- <div className='latest_story_parent'>
-   
-    {
-    Data.filter((item)=>item.id>40 && item.id<44).map((data)=>{
-        return(
-            <>
-            {
-                <NavLink to={`/dynamiccomp/${data.id}`} className={"nav_link"} >
-                     <div className='latest_story_child' onClick={handle}>
-                        <h3>{data.heading}</h3>
-                        <p>{data.largdesc}</p>
-                        <span className="travel">
-                              Travel
-                              <span className="travel_details">
-                                /Sept 5 2023
-                              </span>{" "}
-                            </span>
-            </div>
-                </NavLink>
-            }
-            
-            </>
-        )
-    })
-}
- </div>
-<Footer />
-            </>
-            );
+            <Footer />
+        </>
+    );
 };
 export default Home;
