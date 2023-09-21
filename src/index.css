@@ -299,33 +299,13 @@ hr {
   -webkit-box-orient: vertical;
   margin-top: 5px;
 }
-
-.viewmore {
-  margin-left: 10%;
-  margin-top: 50px;
-  display: inline;
-}
-
-.viewmore:hover {
-  background-color: grey;
-  color: red;
-}
-
-.footer-mine {
-  width: 100%;
-  height: auto;
-  overflow: hidden;
-}
-
 .nav_link {
   text-decoration: none;
   color: black;
 }
-
 h3 {
   text-decoration: none;
 }
-
 p {
   text-decoration: none;
 }
@@ -361,12 +341,6 @@ p {
     height: 400px;
     margin-left: 13px;
   }
-
-  .siren {
-    justify-content: left;
-    padding-left: 5%;
-  }
-
   .navbar {
     top: 5%;
   }
@@ -393,21 +367,10 @@ p {
     width: 95%;
   }
 
-  .home_top_left {
-    width: 100%;
-    height: 100%;
-  }
-
   .home_top_right {
     display: none;
   }
-
-  .navbar {
-    font-size: 20px
-  }
-
   .link1 {
-
     font-size: 5vw;
   }
   .latest_article {
@@ -603,14 +566,5 @@ p {
   box-shadow: 5px 5px 5px 5px gray;
 }
 .home_latest1:hover {
-  box-shadow: 5px 5px 5px 5px gray;
-}
-.home_top_left:hover {
-  box-shadow: 5px 5px 5px 5px gray;
-}
-.home_top_right1:hover {
-  box-shadow: 5px 5px 5px 5px gray;
-}
-.home_top_right2:hover {
   box-shadow: 5px 5px 5px 5px gray;
 }

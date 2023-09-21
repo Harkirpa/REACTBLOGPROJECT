@@ -30,20 +30,6 @@ a {
   text-decoration-color: red;
 
 }
-.Hr {
-  border: 3px solid red;
-  margin-left: 2%;
-  width: 10%;
-  margin-bottom: 5px;
-  margin-top: 5px;
-}
-
-.Hr2 {
-  border: 3px solid red;
-  border-radius: 15px;
-  width: 10%;
-  
-}
 .box2 {
   min-height: 1000px;
   width: 30%;
