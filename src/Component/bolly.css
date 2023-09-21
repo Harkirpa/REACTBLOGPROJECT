@@ -14,8 +14,12 @@
   margin: auto;
 }
 .ads {
-  height: 25em;
-  margin-top: 2em;
+  width: 100%;
+  height: 600px;
+  text-align: center;
+  margin-top: 4em;
+  border-radius: 10px;
+  background-color: peachpuff;
 }
 a {
   text-decoration: none;

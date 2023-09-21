@@ -14,7 +14,7 @@ const Bollywood = () => {
           <div className="Headtag">Bollywood</div>
           <div className="news_card123">
             {BData.filter((item) => item.cat === "Bollywood")
-              .slice(0, 9)
+              .slice(0, 8)
               .map((data) => {
                 return (
                   <>
@@ -185,6 +185,39 @@ const Bollywood = () => {
                       </div>
                     </div>
                   </NavLink>
+                      }
+                      </>
+                    );
+                  })}
+                   {BData.filter((item) => item.id === 56).map((data) => {
+                    return (
+                      <>
+                        {
+                          <NavLink to={`/dynamiccomp/${data.id}`}
+                            className={"home1"}
+                          >
+                            <div className="top_post2">
+                              <div>
+                                <img
+                                  src={data.image}
+                                  alt="not found"
+                                  className={"top_post_img2"}
+                                />
+                              </div>
+                              <div className="top_post_data2">
+                                <h5>{data.heading}</h5>
+                                <div className="travel">
+                                  <h6>
+                                    Travel{" "}
+                                    <span className="travel_details">/Sept 5 2023</span>{" "}
+                                  </h6>
+                                </div>
+                              </div>
+                              <div>
+                                <span className="top-post-count">5</span>{" "}
+                              </div>
+                            </div>
+                          </NavLink>
                 }{" "}
                 <div className="ads">
                   <iframe

@@ -17,7 +17,7 @@ const Food = () => {
 
           <div className="news_card123">
             {FoData.filter((item) => item.cat === "Food")
-              .slice(0, 9)
+              .slice(0, 8)
               .map((data) => {
                 return (
                   <>
@@ -159,39 +159,39 @@ const Food = () => {
                         </div>
                       </div></NavLink>
                   }
-                </>
-              );
-            })}
-          {FoData
-            .filter((item) => item.id === 79)
-            .map((data) => {
-              return (
-                <>
-                  {
-                    <NavLink to={`/dynamiccomp/${data.id}`} className={"home1"} >
-                      <div className="top_post2">
-                        <div>
-                          <img
-                            src={data.image}
-                            alt="not found"
-                            className={"top_post_img2"}
-                          />
-                        </div>
-                        <div className="top_post_data2">
-                          <h5>{data.heading}</h5>
-                          <div className="travel">
-                            <h6>
-                              Travel{" "}
-                              <span className="travel_details">/Sept 5 2023</span>{" "}
-                            </h6>
+                  </>
+                );
+              })}
+            {FoData
+              .filter((item) => item.id === 41)
+              .map((data) => {
+                return (
+                  <>
+                    {
+                      <NavLink to={`/dynamiccomp/${data.id}`} className={"home1"} >
+                        <div className="top_post2">
+                          <div>
+                            <img
+                              src={data.image}
+                              alt="not found"
+                              className={"top_post_img2"}
+                            />
                           </div>
-                        </div>
-                        <div>
-                          <span className="top-post-count">4</span>{" "}
-                        </div>
-                      </div></NavLink>
-                  }
-                  <div className='ads'>
+                          <div className="top_post_data2">
+                            <h5>{data.heading}</h5>
+                            <div className="travel">
+                              <h6>
+                                Travel{" "}
+                                <span className="travel_details">/Sept 5 2023</span>{" "}
+                              </h6>
+                            </div>
+                          </div>
+                          <div>
+                            <span className="top-post-count">5</span>{" "}
+                          </div>
+                        </div></NavLink>
+                        }
+             <div className='ads'>
                     <iframe src="https://giphy.com/embed/WtVL452Yfaksck8ZoF" style={{ width: "280px", height: "100%", border: 'none' }} title="ad"></iframe>
                   </div>
                 </>
