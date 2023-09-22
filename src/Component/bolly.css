@@ -154,7 +154,7 @@ a {
   .img_card {
     height: 180px;
     width: 250px;
-    margin-left: 6%;
+    margin-left: 4%;
     margin-top: 23px;
   }
   .top_post_data1 h3 {
@@ -179,7 +179,7 @@ a {
     margin-left: 12%;
   }
   .Headtag{
-    top:-173px;
+    top:-147px;
   }
   .adv {
     display: none;
