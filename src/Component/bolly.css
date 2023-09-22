@@ -60,7 +60,6 @@ a {
   width: 90%;
   height: auto;
   box-sizing: border-box;
-
   border-radius: 10px;
   margin: auto;
   margin-top: 2%;
@@ -141,8 +140,13 @@ a {
   .head_card {
     flex-direction: column;
   }
+  .head{
+    width:50%;
+    top:-15px;
+  }
   .news_box {
     flex-direction: column;
+    margin-top: 20px;
   }
   .news_card123 {
     margin-top: -53%;
@@ -150,8 +154,8 @@ a {
   .img_card {
     height: 180px;
     width: 250px;
-    margin-left: -3%;
-    margin-top: 99px;
+    margin-left: 6%;
+    margin-top: 23px;
   }
   .top_post_data1 h3 {
     position: relative;
@@ -170,9 +174,12 @@ a {
     margin-left: auto;
   }
   .box1 {
-    margin-top: 25%;
+    margin-top: 52%;
     width: 80%;
     margin-left: 12%;
+  }
+  .Headtag{
+    top:-173px;
   }
   .adv {
     display: none;
@@ -183,18 +190,30 @@ a {
   .maines_box {
     justify-content: center;
   }
+  .news_card123{
+    margin-top: -2%;
+  }
   .head_card {
     flex-direction: column;
   }
   .news_box {
     flex-direction: column;
   }
+  .img_card {
+    margin-left: 4%;
+  }
+  .head{
+    top:-3px;
+  }
   .box2{
-    margin-top: -34px;
+    margin-top: -16px;
     margin-right: 12%;
   }
   .Headtag{
-    top:-30px;
+    top:-16px;
+  }
+  .ads{
+    width:129%;
   }
 }
 p {
