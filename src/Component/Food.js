@@ -1,12 +1,19 @@
-import React, { useContext } from "react";
-import storeData from "../app/Store";
+import React, {useEffect,useState } from "react";
+import axios from "axios";
+// import storeData from "../app/Store";
 import { NavLink } from "react-router-dom";
 import Navbar from "./Navbar";
 import Footer from "./Footer";
 
 import "./bolly.css";
 const Food = () => {
-  const [FoData] = useContext(storeData);
+  // const [data] = useContext(storeData);
+  const[data,setdata]=useState([])
+  useEffect(()=>{
+    axios.get('https://nodeblogapi-1oc6.onrender.com/api/food')
+    .then((response)=>setdata(response.data))
+    .catch((err)=>console.log(err))
+  },[])
   return (
     <>
       <Navbar />
@@ -16,7 +23,7 @@ const Food = () => {
             Food</div>
 
           <div className="news_card123">
-            {FoData.filter((item) => item.cat === "Food")
+            {data.filter((item) => item.cat === "Food")
               .slice(0, 8)
               .map((data) => {
                 return (
@@ -58,7 +65,7 @@ const Food = () => {
         <div className="box2">
           <h1 className="head">Top Posts</h1>
 
-          {FoData
+          {data
             .filter((item) => item.id === 75)
             .map((data) => {
 
@@ -98,7 +105,7 @@ const Food = () => {
                 </>
               );
             })}
-          {FoData
+          {data
             .filter((item) => item.id === 80)
             .map((data) => {
               return (
@@ -130,7 +137,7 @@ const Food = () => {
                 </>
               );
             })}
-          {FoData
+          {data
             .filter((item) => item.id === 77)
             .map((data) => {
               return (
@@ -162,7 +169,7 @@ const Food = () => {
                   </>
                 );
               })}
-            {FoData
+            {data
               .filter((item) => item.id === 41)
               .map((data) => {
                 return (

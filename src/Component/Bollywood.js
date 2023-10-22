@@ -1,11 +1,19 @@
-import React, { useContext } from "react";
-import storeData from "../app/Store";
+import React, { useEffect, useState } from "react";
+import axios from "axios";
+// import storeData from "../app/Store";
 import { NavLink } from "react-router-dom";
 import Navbar from "./Navbar";
 import Footer from "./Footer";
 import "./bolly.css";
 const Bollywood = () => {
-  const [BData] = useContext(storeData);
+  // const [BData] = useContext(storeData);
+  const[data,setData]=useState([])
+   useEffect(()=>{
+    axios.get("https://nodeblogapi-1oc6.onrender.com/api/bollywood")
+    .then((response)=>setData(response.data))
+    .catch((err)=>console.log(err))
+  },[])
+  // console.log(data)
   return (
     <>
       <Navbar />
@@ -13,7 +21,7 @@ const Bollywood = () => {
         <div className="box1">
           <div className="Headtag">Bollywood</div>
           <div className="news_card123">
-            {BData.filter((item) => item.cat === "Bollywood")
+            {data.filter((item) => item.cat === "Bollywood")
               .slice(0, 8)
               .map((data) => {
                 return (
@@ -51,7 +59,7 @@ const Bollywood = () => {
         <div className="box2">
           <h1 className="head">Top Posts</h1>
 
-          {BData.filter((item) => item.id === 10).map((data) => {
+          {data.filter((item) => item.id === 10).map((data) => {
             return (
               <>
                 {
@@ -89,7 +97,7 @@ const Bollywood = () => {
               </>
             );
           })}
-          {BData.filter((item) => item.id === 11).map((data) => {
+          {data.filter((item) => item.id === 11).map((data) => {
             return (
               <>
                 {
@@ -122,7 +130,7 @@ const Bollywood = () => {
               </>
             );
           })}
-          {BData.filter((item) => item.id === 15).map((data) => {
+          {data.filter((item) => item.id === 15).map((data) => {
             return (
               <>
                 {
@@ -156,7 +164,7 @@ const Bollywood = () => {
               </>
             );
           })}
-          {BData.filter((item) => item.id === 14).map((data) => {
+          {data.filter((item) => item.id === 14).map((data) => {
             return (
               <>
                 {
@@ -189,7 +197,7 @@ const Bollywood = () => {
                       </>
                     );
                   })}
-                   {BData.filter((item) => item.id === 56).map((data) => {
+                   {data.filter((item) => item.id === 56).map((data) => {
                     return (
                       <>
                         {

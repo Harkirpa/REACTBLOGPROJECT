@@ -1,12 +1,19 @@
-import React, { useContext } from "react";
-import storeData from "../app/Store";
+import React, {useState,useEffect } from "react";
+import axios from "axios";
+// import storeData from "../app/Store";
 import { NavLink } from "react-router-dom";
 import Navbar from "./Navbar";
 import Footer from "./Footer";
-
 import "./bolly.css";
 const Hollywood = () => {
-  const [HData] = useContext(storeData);
+  // const [data] = useContext(storeData);
+  const[data,setdata]=useState([])
+  useEffect(()=>{
+    axios.get('https://nodeblogapi-1oc6.onrender.com/api/hollywood')
+    .then((response)=>setdata(response.data))
+    .catch((err)=>console.log(err))
+  },[])
+  console.log(data)
   return (
     <>
       <Navbar />
@@ -15,7 +22,7 @@ const Hollywood = () => {
           <div className="Headtag">Hollywood</div>
         
           <div className="news_card123">
-            {HData.filter((item) => item.cat === "Hollywood")
+            {data.filter((item) => item.cat === "Hollywood")
               .slice(0, 8)
               .map((data) => {
                 return (
@@ -53,7 +60,7 @@ const Hollywood = () => {
         <div className="box2">
           <h1 className="head">Top Posts</h1>
          
-          {HData.filter((item) => item.id === 57).map((data) => {
+          {data.filter((item) => item.id === 57).map((data) => {
             return (
               <>
                 {
@@ -91,7 +98,7 @@ const Hollywood = () => {
               </>
             );
           })}
-          {HData.filter((item) => item.id === 58).map((data) => {
+          {data.filter((item) => item.id === 58).map((data) => {
             return (
               <>
                 {
@@ -126,7 +133,7 @@ const Hollywood = () => {
               </>
             );
           })}
-          {HData.filter((item) => item.id === 55).map((data) => {
+          {data.filter((item) => item.id === 55).map((data) => {
             return (
               <>
                 {
@@ -161,7 +168,7 @@ const Hollywood = () => {
               </>
             );
           })}
-          {HData.filter((item) => item.id === 48).map((data) => {
+          {data.filter((item) => item.id === 48).map((data) => {
             return (
               <>
                 {
@@ -197,7 +204,7 @@ const Hollywood = () => {
                        </>
                      );
                    })}
-                   {HData.filter((item) => item.id === 49).map((data) => {
+                   {data.filter((item) => item.id === 49).map((data) => {
                      return (
                        <>
                          {

@@ -1,12 +1,19 @@
-import React, { useContext } from "react";
-import storeData from "../app/Store";
+import React, {useState,useEffect} from "react";
+import axios from "axios";
+// import storeData from "../app/Store";
 import { NavLink } from "react-router-dom";
 import Navbar from "./Navbar";
 import Footer from "./Footer";
-
 import "./bolly.css";
 const Fitness = () => {
-  const [FData] = useContext(storeData);
+  // const [dataata] = useContext(storeData);
+  const[data,setdata]=useState([])
+
+  useEffect(()=>{
+    axios.get('https://nodeblogapi-1oc6.onrender.com/api/fitness')
+    .then((response)=>setdata(response.data))
+    .catch((err)=>console.log(err))
+  },[])
   return (
     <>
       <Navbar />
@@ -14,7 +21,7 @@ const Fitness = () => {
         <div className="box1">
           <div className="Headtag">Fitness</div>
           <div className="news_card123">
-            {FData.filter((item) => item.cat === "Fitness")
+            {data.filter((item) => item.cat === "Fitness")
               .slice(0, 8)
               .map((data) => {
                 return (
@@ -52,7 +59,7 @@ const Fitness = () => {
         <div className="box2">
           <h1 className="head">Top Posts</h1>
 
-          {FData.filter((item) => item.id === 32).map((data) => {
+          {data.filter((item) => item.id === 32).map((data) => {
             return (
               <>
                 {
@@ -90,7 +97,7 @@ const Fitness = () => {
               </>
             );
           })}
-          {FData.filter((item) => item.id === 31).map((data) => {
+          {data.filter((item) => item.id === 31).map((data) => {
             return (
               <>
                 {
@@ -125,7 +132,7 @@ const Fitness = () => {
               </>
             );
           })}
-          {FData.filter((item) => item.id === 30).map((data) => {
+          {data.filter((item) => item.id === 30).map((data) => {
             return (
               <>
                 {
@@ -160,7 +167,7 @@ const Fitness = () => {
               </>
             );
           })}
-          {FData.filter((item) => item.id === 25).map((data) => {
+          {data.filter((item) => item.id === 25).map((data) => {
             return (
               <>
                 {
@@ -195,7 +202,7 @@ const Fitness = () => {
                     </>
                   );
                 })}
-                {FData.filter((item) => item.id === 80).map((data) => {
+                {data.filter((item) => item.id === 80).map((data) => {
                   return (
                     <>
                       {

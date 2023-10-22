@@ -1,11 +1,18 @@
-import React, { useContext } from "react";
-import storeData from "../app/Store";
+import React, {useState,useEffect} from "react";
+import axios from "axios";
+// import storeData from "../app/Store";
 import { NavLink } from "react-router-dom";
 import Navbar from "./Navbar";
 import Footer from "./Footer";
 import "./bolly.css";
 const Technology = () => {
-  const [TData] = useContext(storeData);
+  // const [data] = useContext(storeData);
+  const[data,setdata]=useState([])
+useEffect(()=>{
+    axios.get('https://nodeblogapi-1oc6.onrender.com/api/technology')
+    .then((response)=>setdata(response.data))
+    .catch((err)=>console.log(err))
+  },[])
   return (
     <>
       <Navbar />
@@ -14,7 +21,7 @@ const Technology = () => {
           <div className="Headtag">Technology</div>
          
           <div className="news_card123">
-            {TData.filter((item) => item.cat === "Technology")
+            {data.filter((item) => item.cat === "Technology")
               .slice(0, 8)
               .map((data) => {
                 return (
@@ -52,7 +59,7 @@ const Technology = () => {
         <div className="box2">
           <h1 className="head">Top Posts</h1>
          
-          {TData.filter((item) => item.id === 74).map((data) => {
+          {data.filter((item) => item.id === 74).map((data) => {
             return (
               <>
                 {
@@ -90,7 +97,7 @@ const Technology = () => {
               </>
             );
           })}
-          {TData.filter((item) => item.id === 70).map((data) => {
+          {data.filter((item) => item.id === 70).map((data) => {
             return (
               <>
                 {
@@ -125,7 +132,7 @@ const Technology = () => {
               </>
             );
           })}
-          {TData.filter((item) => item.id === 73).map((data) => {
+          {data.filter((item) => item.id === 73).map((data) => {
             return (
               <>
                 {
@@ -161,7 +168,7 @@ const Technology = () => {
               </>
             );
           })}
-          {TData.filter((item) => item.id === 72).map((data) => {
+          {data.filter((item) => item.id === 72).map((data) => {
             return (
               <>
                 {
@@ -197,7 +204,7 @@ const Technology = () => {
                  </>
                );
              })}
-             {TData.filter((item) => item.id === 68).map((data) => {
+             {data.filter((item) => item.id === 68).map((data) => {
                return (
                  <>
                    {
