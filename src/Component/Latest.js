@@ -851,10 +851,10 @@ const Latest = () => {
   // ]);
   const[data,setData]=useState([])
   useEffect(()=>{
-    axios.get('https://nodeblogapi-1oc6.onrender.com/api/home')
+    axios.get('https://nodeblogapi-1oc6.onrender.com/api/blog')
     .then((response)=>setData(response.data))
     .catch((err)=>console.log(err))
-  })
+  },[])
   return (
     <>
       <storeData.Provider value={[data, setData]}>

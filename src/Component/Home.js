@@ -3,9 +3,9 @@ import { NavLink } from "react-router-dom";
 import Footer from "./Footer";
 import Navbar from "./Navbar";
 import { handle } from "./handle";
-import storeData from "../app/Store";
+import storedata from "../app/Store";
 const Home = () => {
-    const [Data] = useContext(storeData);
+    const [data] = useContext(storedata);
     return (
         <>
             <Navbar />
@@ -31,8 +31,7 @@ const Home = () => {
 
             <div className="home_latest">
                 <div className="home_latest2">
-                    {
-                        Data.filter((item) => {
+                    {data.filter((item) => {
                             return item.cat === "Bollywood" && item.id === 2;
                         }).map((element) => {
                             return (
@@ -56,7 +55,7 @@ const Home = () => {
 
                 <div className="home_latest2">
                     {
-                        Data.filter((item) => {
+                        data.filter((item) => {
                             return item.cat === "Technology" && item.id === 62;
                         }).map((element) => {
                             return (
@@ -78,7 +77,7 @@ const Home = () => {
                 </div>
                 <div className="home_latest2">
                     {
-                        Data.filter((item) => {
+                        data.filter((item) => {
                             return item.cat === "Fitness" && item.id === 31;
                         }).map((element) => {
                             return (
@@ -103,7 +102,7 @@ const Home = () => {
             <div className="latest_article">
                 <div className="latest_article1">
                     {
-                        Data.filter((item) => item.id > 68 && item.id < 73).map((data) => {
+                        data.filter((item) => item.id > 68 && item.id < 73).map((data) => {
                             return (
                                 <>
                                     {
@@ -131,7 +130,7 @@ const Home = () => {
 
                     <div className='loadmore'>
                         {
-                            Data.filter((item) => item.id === 79).map((data) => {
+                            data.filter((item) => item.id === 79).map((data) => {
                                 return (
                                     <>
                                         {
@@ -159,7 +158,7 @@ const Home = () => {
                     <div className='top1st-big'>
                         <h3>Top Post</h3>
                         {
-                            Data.filter((item) => item.id === 80).map((data) => {
+                            data.filter((item) => item.id === 80).map((data) => {
                                 return (
                                     <>
                                         {
@@ -180,7 +179,7 @@ const Home = () => {
                     <div className='top2nd-smal'>
 
                         {
-                            Data.filter((item) => item.id === 79).map((data) => {
+                            data.filter((item) => item.id === 79).map((data) => {
                                 return (
                                     <>
                                         {
@@ -200,7 +199,7 @@ const Home = () => {
                         }
 
                         {
-                            Data.filter((item) => item.id === 69).map((data) => {
+                            data.filter((item) => item.id === 69).map((data) => {
                                 return (
                                     <>
                                         {
@@ -220,7 +219,7 @@ const Home = () => {
                         }
 
                         {
-                            Data.filter((item) => item.id === 59).map((data) => {
+                            data.filter((item) => item.id === 59).map((data) => {
                                 return (
                                     <>
                                         {
@@ -249,7 +248,7 @@ const Home = () => {
             <div className='latest_story_parent'>
 
                 {
-                    Data.filter((item) => item.id > 40 && item.id < 44).map((data) => {
+                    data.filter((item) => item.id > 40 && item.id < 44).map((data) => {
                         return (
                             <>
                                 {

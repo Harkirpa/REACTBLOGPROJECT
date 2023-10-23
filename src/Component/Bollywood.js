@@ -1,20 +1,13 @@
-import React, { useEffect, useState } from "react";
-import axios from "axios";
-// import storeData from "../app/Store";
+import React, { useContext } from "react";
+// import axios from "axios";
+import storeData from "../app/Store";
 import { NavLink } from "react-router-dom";
 import Navbar from "./Navbar";
 import Footer from "./Footer";
 import "./bolly.css";
 const Bollywood = () => {
-  // const [BData] = useContext(storeData);
-  const[data,setData]=useState([])
-   useEffect(()=>{
-    axios.get("https://nodeblogapi-1oc6.onrender.com/api/bollywood")
-    .then((response)=>setData(response.data))
-    .catch((err)=>console.log(err))
-  },[])
-  // console.log(data)
-  return (
+  const [data] = useContext(storeData);
+ return (
     <>
       <Navbar />
       <div className="maines_box">

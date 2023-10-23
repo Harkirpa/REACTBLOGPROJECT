@@ -1,19 +1,12 @@
-import React, {useEffect,useState } from "react";
-import axios from "axios";
-// import storeData from "../app/Store";
+import React, {useContext } from "react";
+// import axios from "axios";
+import storeData from "../app/Store";
 import { NavLink } from "react-router-dom";
 import Navbar from "./Navbar";
 import Footer from "./Footer";
-
 import "./bolly.css";
 const Food = () => {
-  // const [data] = useContext(storeData);
-  const[data,setdata]=useState([])
-  useEffect(()=>{
-    axios.get('https://nodeblogapi-1oc6.onrender.com/api/food')
-    .then((response)=>setdata(response.data))
-    .catch((err)=>console.log(err))
-  },[])
+  const [data] = useContext(storeData);
   return (
     <>
       <Navbar />
