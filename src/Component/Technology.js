@@ -1,18 +1,18 @@
-import React, {useContext} from "react";
-// import axios from "axios";
-import storeData from "../app/Store";
+import React from "react";
+import axios from "axios";
+// import storeData from "../app/Store";
 import { NavLink } from "react-router-dom";
 import Navbar from "./Navbar";
 import Footer from "./Footer";
+import { useState,useEffect } from "react"
 import "./bolly.css";
 const Technology = () => {
-  const [data] = useContext(storeData);
-//   const[data,setdata]=useState([])
-// useEffect(()=>{
-//     axios.get('https://nodeblogapi-1oc6.onrender.com/api/technology')
-//     .then((response)=>setdata(response.data))
-//     .catch((err)=>console.log(err))
-//   },[])
+  const[data,setdata]=useState([])
+useEffect(()=>{
+    axios.get('https://nodeblogapi-1oc6.onrender.com/api/blog')
+    .then((response)=>setdata(response.data))
+    .catch((err)=>console.log(err))
+  },[])
   return (
     <>
       <Navbar />
